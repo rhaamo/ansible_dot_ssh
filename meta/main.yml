@@ -1,0 +1,9 @@
+---
+
+dependencies: []
+
+galaxy_info:
+
+  author: dashie
+  description: custom .ssh/infra/ files
+  license: MIT

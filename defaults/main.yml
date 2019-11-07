@@ -1,0 +1,7 @@
+---
+
+dot_ssh_bastion: false
+dot_ssh_bastion_fqdn: false
+dot_ssh_bastion_suffix: false
+
+dot_ssh_host_ip: false

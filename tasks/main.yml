@@ -1,0 +1,20 @@
+---
+
+- name: Ensure ~/.ssh/infra/ exists
+  connection: local
+  file:
+      path: ~/.ssh/infra/
+      state: directory
+      owner: dashie
+      group: staff
+      mode: g-rwx,o-rwx
+
+- name: Create ssh configuration file for host
+  connection: local
+  template:
+      src: 'host.cfg'
+      dest: '~/.ssh/infra/{{ ansible_hostname }}.cfg'
+      owner: dashie
+      group: staff
+      mode: g-rwx,o-rwx
+
