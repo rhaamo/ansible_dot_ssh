@@ -98,3 +98,11 @@ Host rainbowdash.lxc.remote.tld
 Host celestia.remote.tld
     HostName celestia.remote.tld
 ```
+
+## SSH config
+```
+# ~/.ssh/config
+Host *
+    Include infra/*.cfg
+```
+
